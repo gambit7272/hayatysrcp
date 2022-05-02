@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" href="project/css/c1.css" rel="stylesheet" />
+<link type="text/css"  href="project/css/c2.css" rel="stylesheet" />
+<link type="text/css" href="project/css/c3.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title></title>
+<link rel='stylesheet' href='project/css/style.css' type='text/css'  />
+<style>
+ .wpb_animate_when_almost_visible { opacity: 1; }
+.logostyle{
+width:auto;
+height:70px !important;
+margin-top:-40px;
+}
+.rotate {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+ 0% { transform: translateX(20PX); }
+    100% { transform: translateY(-20px); }
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(50PX); }
+    100% { transform: translateY(-10px); }
+}
+}
+.navbar-nav>li>a
+{
+color: #002377 !important;
+}
+.card-footer
+{
+background-color:#01257e;
+color:#fff;
+}
+.navbar-default .navbar-nav>li>a
+{
+color: #002377 !important;
+}
+.dropdown-menu>li>a
+{
+color: #002377 !important;
+}
+.copyright
+{
+margin-top:10px}
+.header-default .page-header-section, .no-header .page-header-section
+{
+padding:100px 0;}
+.biography-info-wrapper .bio-info ul li
+{
+line-height:30px !important;
+}
+
+/*  bhoechie tab */
+div.bhoechie-tab-container{
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 0 !important;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  border:1px solid #ddd;
+  margin-top: 20px;
+  margin-left: 50px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+  filter: alpha(opacity=97);
+}
+div.bhoechie-tab-menu{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group{
+  margin-bottom: 0;
+  box-shadow: 0 0 20px #000;
+}
+div.bhoechie-tab-menu div.list-group>a{
+  margin-bottom: 0;
+  color:#fff ;
+  text-align:left;
+}
+div.bhoechie-tab-menu div.list-group>a .glyphicon,
+div.bhoechie-tab-menu div.list-group>a .fa {
+  color: #5A55A3;
+}
+div.bhoechie-tab-menu div.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a:last-child{
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a.active,
+div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+div.bhoechie-tab-menu div.list-group>a.active .fa{
+  background-color: #021456;
+  background-image: #5A55A3;
+  color: #ffffff;
+}
+div.bhoechie-tab-menu div.list-group>a.active:after{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #5A55A3;
+}
+
+div.bhoechie-tab-content{
+  background-color: #ffffff;
+  /* border: 1px solid #eeeeee; */
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+  display: none;
+}
+.list-group-item
+{
+background-color: #007c01;
+}
+ a.list-group-item:hover, button.list-group-item:hover
+{
+background-color: #007c01 !important;
+
+}
+.boxmanifesto
+{
+background-color:#021456;
+margin-bottom:20px;
+padding:6px;
+text-align:justify;
+box-shadow:0 0 20px #007c01;
+}
+.boxmanifesto1
+{
+background-color:#007c01;
+margin-bottom:20px;
+padding:6px;
+text-align:justify;
+box-shadow:0 0 20px #021456;
+}
+</style>
+
+</head>
+<body oncontextmenu="return false;">
+<div class="site-wrapper ">
+<div class="header-wrapper navbar-fixed-top">
+<nav class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-toggle">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="navbar-brand">
+<h1>
+<a href="index.html" title="logo">
+<img  src="project/images/logo.jpg" alt="logo" class="logostyle" />
+</a>
+</h1> </div> 
+</div> 
+<div class="main-menu-wrapper hidden-xs clearfix">
+<div class="main-menu">
+
+<ul id="menu-primary-menu" class="menu nav navbar-nav navbar-right"><li id="menu-item-3324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3324 dropdown  has-menu-child"><a title="Home" href="index.html">Home <span class="fa fa-angle-down"></span></a>
+<div class="dropdown-wrapper menu-item-depth-0">
+<ul role="menu" class="dropdown-menu">
+<li id="menu-item-3597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3597  has-menu-child"><a title="Default Home" href="candidate.html">Candidate Home</a></li>
+
+
+</ul>
+</div>
+</li>
+<li id="menu-item-3325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3325  has-menu-child "><a title="About" href="about.html">About</a></li>
+
+<li id="menu-item-3330" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3330 dropdown  has-menu-child"><a title="Events" href="events.html">Events </a>
+
+</li>
+<li id="menu-item-3334" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3334 dropdown  has-menu-child"><a title="Pages" href="#">Pages <span class="fa fa-angle-down"></span></a>
+<div class="dropdown-wrapper menu-item-depth-0">
+<ul role="menu" class="dropdown-menu">
+<li id="menu-item-3337" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3337  has-menu-child"><a title="Biography" href="biography.html">Biography</a></li>
+<li id="menu-item-3338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3338  has-menu-child active"><a title="Manifesto" href="manifesto.html">Manifesto</a></li>
+<li id="menu-item-3339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3339  has-menu-child"><a title="Members" href="members.html">Members</a></li>
+<li id="menu-item-3354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3354  has-menu-child"><a title="Volunteer" href="voulnteer.html">Volunteer</a></li>
+
+</ul>
+</div>
+</li>
+
+<li id="menu-item-3382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3382  has-menu-child"><a title="Contact" href="contact.html">Contact</a></li>
+</ul> </div>
+</div> 
+
+<div class="visible-xs">
+<div id="mobile-toggle" class="mobile-menu collapse navbar-collapse">
+<ul id="menu-primary-menu-1" class="menu nav navbar-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3324 active active  has-menu-child"><a title="Home" href="index.html">Home</a>
+<button class="dropdown-menu-trigger" type="button" data-toggle="collapse" data-target=".dropdown-menu-3324" aria-expanded="false">
+<i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i>
+</button>
+<ul role="menu" class="collapse dropdown-menu-3324 ">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3597  has-menu-child"><a title="Default Home" href="candidate.html">Candidate Home</a></li>
+
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3325  has-menu-child"><a title="About" href="about.html">About</a></li>
+
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3330  has-menu-child"><a title="Events" href="events.html">Events</a>
+<button class="dropdown-menu-trigger" type="button" data-toggle="collapse" data-target=".dropdown-menu-3330" aria-expanded="false">
+<i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i>
+</button>
+
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3334  has-menu-child"><a title="Pages" href="#">Pages</a>
+<button class="dropdown-menu-trigger" type="button" data-toggle="collapse" data-target=".dropdown-menu-3334" aria-expanded="false">
+<i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i>
+</button>
+<ul role="menu" class="collapse dropdown-menu-3334 ">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3337  has-menu-child"><a title="Biography" href="biography.html">Biography</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3338  has-menu-child"><a title="Manifesto" href="manifesto.html">Manifesto</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3339  has-menu-child"><a title="Members" href="members.html">Members</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3354  has-menu-child"><a title="Volunteer" href="voulnteer.html">Volunteer</a></li>
+</ul>
+</li>
+
+
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3382  has-menu-child"><a title="Contact" href="contact.html">Contact</a></li>
+</ul> </div> 
+</div>
+</div>
+</nav>
+</div> 
+<div class="page-header-section" style="background-image:url(project/images/Manifestobanner.jpg);padding:100px 0;margin-top:-50px" role="banner" >
+<div class="tt-overlay"></div>
+<div class="container">
+<div class="page-header">
+<h2>Manifesto</h2>
+<ul class="breadcrumb">
+<li>
+<a href="index.html" style="color:#fff">Home</a>
+</li>
+<li class="active">
+Manifesto </li>
+</ul>
+</div>
+</div> 
+</div>
+<div class="vc-content-wrapper">
+<div class="container">
+	<div class="row">
+        <div class="col-md-12">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
+              <div class="list-group">
+                <a href="#" class="list-group-item active ">
+                 YSR Rythu Bharosa
+                </a>
+                <a href="#" class="list-group-item ">
+                 Fee Reimbursement
+                </a>
+                <a href="#" class="list-group-item ">
+                 Arogyasri
+                </a>
+                <a href="#" class="list-group-item ">
+                Jalayagnam
+                </a>
+                <a href="#" class="list-group-item ">
+                Ban on Alcohol
+                </a>
+				 <a href="#" class="list-group-item ">
+                Amma Vodi
+                </a>
+				 <a href="#" class="list-group-item ">
+                YSR Asara
+                </a>  
+				<a href="#" class="list-group-item">
+                YSR Cheyutha
+
+                </a> 
+				
+				<a href="#" class="list-group-item ">
+                Pedhalandariki Illu
+                </a>
+				 <a href="#" class="list-group-item ">
+                Pensionla Pempu
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+                <!-- flight section -->
+                <div class="bhoechie-tab-content active" >
+				<img src="project/images/manifestopic.jpg" style="height:355px;width:100%;margin-top:-10px">
+				<div class="boxmanifesto">
+                   <b style="color:#fff;">The YSRCP promises to offer financial assistance of Rs 50,000 to farmers. In the second year, each farmer’s family would be given Rs 12,500 per year, in addition to zero-interest loans and free bore-wells. A calamity relief fund of Rs 4,000 crore, 9 hours free electricity during the day, cold storage units and food processing centres in every constituency are among a list of benefits promised to farmers.</b>
+				   </div>
+                </div>
+                <!-- train section -->
+                <div class="bhoechie-tab-content">
+					<img src="project/images/manifestopic.jpg" style="height:355px;width:100%;margin-top:-10px">
+                    <div class="boxmanifesto1">
+
+                    <p><b style="color:#fff;">The party plans to provide a comprehensive fee reimbursement scheme, in line with late Chief Minister Dr YS Rajasekhara Reddy’s vision. In addition to complete fee reimbursement, an allowance of Rs 20,000 would be given to every student. A total of Rs 1 to 1.5 lakh would be spend on each student’s education.</b></p>
+                </div>
+               </div>
+                <!-- hotel search -->
+                <div class="bhoechie-tab-content">
+				<img src="project/images/manifestopic.jpg" style="height:355px;width:100%;margin-top:-10px">
+				<div class="boxmanifesto">
+                    <p><b style="color:#fff">The Arogyasri scheme would be applicable to all medical treatments of above Rs 1,000. Regardless of the location of the hospital, all medical expenses would be borne by the government.</b></p>
+                </div>
+				</div>
+                <div class="bhoechie-tab-content">
+				<img src="project/images/manifestopic.jpg" style="height:355px;width:100%;margin-top:-10px">
+				<div class="boxmanifesto1">
+                   <p><b style="color:#fff">Under this scheme, lakhs of families would be benefited by irrigation projects. Completion of Polavaram project on a war footing is one of the priorities under Jalayagnam.</b></p>
+                </div>
+				</div>
+				 <div class="bhoechie-tab-content">
+				 <img src="project/images/manifestopic.jpg" style="height:355px;width:100%;margin-top:-10px">
+				 <div class="boxmanifesto">
+                   <p><b style="color:#fff">The YSRCP promises to put in place a ban on sale of alcohol across the State in three stages.</b></p>
+                </div>
+				</div>
+				 <div class="bhoechie-tab-content">
+				 <img src="project/images/manifestopic.jpg" style="height:355px;width:100%;margin-top:-10px">
+				 <div class="boxmanifesto1">
+                   <p><b style="color:#fff">With a view to encourage families with school-going children, the YSRCP promises to provide Rs 15,000 towards assistance to all mothers who send their children to school.</b></p>
+                </div>
+				</div>
+				 <div class="bhoechie-tab-content">
+				 <img src="project/images/manifestopic.jpg" style="height:355px;width:100%;margin-top:-10px">
+				 <div class="boxmanifesto">
+                   <p><b style="color:#fff">All loans pertaining to the women’s co-operative societies would be waived. In addition, zero-interest loans would be issued. Payment of interest amount on loans up to Rs 50,000 would be borne by the government.</b></p>
+                </div>
+				</div>
+				<div class="bhoechie-tab-content">
+				 <img src="project/images/manifestopic.jpg" style="height:355px;width:100%;margin-top:-10px">
+				 <div class="boxmanifesto1">
+                   <p><b style="color:#fff">
+Through YSR Cheyutha, the YSRCP intends to support all women from SC, ST, BC and minority communities, who are aged over 45. This would amount to Rs 75,000 per woman from these communities over a period of 4 years.</b></p>
+                </div>
+				</div>
+				 <div class="bhoechie-tab-content">
+				 <img src="project/images/manifestopic.jpg" style="height:355px;width:100%;margin-top:-10px">
+				 <div class="boxmanifesto">
+                   <p><b style="color:#fff">In five years, the YSRCP promises to build 25 lakh homes for the poor. Permanent houses to the homeless poor will be built over a period of 5 years and registered in name of the woman of the household. The government will also take the initiative of providing an additional loan facility through banks at 0.25 paisa interest.</b></p>
+                </div>
+				</div>
+                <div class="bhoechie-tab-content">
+				<img src="project/images/manifestopic.jpg" style="height:355px;width:100%;margin-top:-10px">
+				 <div class="boxmanifesto1">
+                   <p><b style="color:#fff">The eligibility age criteria of 65 years for the pensions would be reduced to 60 years. Senior citizens aged above 60 would be given Rs 2,000 while the physically challenged would be given a pension of Rs 3,000.</b></p>
+                </div>
+				</div>
+            </div>
+        </div>
+  </div>
+</div>
+
+</div>
+<div class="footer-copyright">
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+<div class="copyright" style="color:#fff">
+Copyright &copy; 2021 HAYATYSRCP. All Rights Reserved. Designed by <a href='https://m.facebook.com/mattasoftwaresolutions'>Matta Software Solutions</a>.
+</div> 
+</div> 
+<div class="col-sm-6">
+<div class="social-links-wrap text-right">
+<div class="footer-social-links social-links">
+<ul class="list-inline">
+<li><a href="https://m.facebook.com/38divisionVjaYsrcpLeader/?ref=bookmarks" target="_blank"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://www.twitter.com/38divisionvja/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://www.instagram.com/38divisionysrcpvja/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+</ul>
+</div> </div> 
+</div>
+</div> 
+</div> 
+</div> 
+</footer> 
+</div> 
+
+<script>$(document).ready(function() {
+    $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+        $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+    });
+});
+</script>
+<script>
+document.onkeydown = function(e) {
+      if (e.ctrlKey && 
+          (e.keyCode === 67 || 
+           e.keyCode === 86 || 
+           e.keyCode === 85 ||
+           e.keyCode === 123|| 
+           e.keyCode === 117)) {
+       //   alert('not allowed');
+          return false;
+      } else {
+          return true;
+      }
+};
+ 
+<!-- it loads when the page is loading -->
+ $(document).keydown(function (event) {
+	event.preventDefault();
+	event.stopPropagation();
+	
+    if (event.keyCode == 123) { // Prevent F12
+    	// alert('not allowed');
+        return false;
+    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I  
+    	// alert('not allowed');      
+        return false;
+    }
+});
+</script>
+</body>
+
+</html>

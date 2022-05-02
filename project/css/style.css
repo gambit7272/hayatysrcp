@@ -1,0 +1,44 @@
+
+
+
+.navbar-default{
+    ;
+}
+.header-transparent .sticky.navbar-default,
+.header-fullwidth.sticky .navbar-default,
+.sticky .navbar-default {
+    ;
+}
+.header-transparent .navbar-default .navbar-nav>li>a,
+.header-fullwidth .navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a{
+    ;
+}
+.header-transparent .sticky.navbar-default .navbar-nav>li>a,
+.header-fullwidth.sticky .navbar-default .navbar-nav>li>a,
+.sticky .navbar-default .navbar-nav>li>a{
+    ;
+}
+
+
+
+
+@media (max-width : 767px) {
+    .navbar-default{
+         !important;
+    }
+
+    .navbar-default .navbar-nav li a{
+        ;
+    }
+
+}
+
+.footer-copyright
+{
+	background-color:#000
+}
+.footer-multi-wrapper .copyright
+{
+	color:#fff;
+}
